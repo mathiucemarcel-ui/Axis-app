@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AXIS • Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+
+  <h1>Today’s Alignment</h1>
+
+  <div id="app"></div>
+
+  <button id="logout">Logout</button>
+
+  <script>
+    const user = netlifyIdentity.currentUser();
+
+    if (!user) {
+      window.location.href = "login.html";
+    }
+
+    document.getElementById("logout").onclick = function () {
+      netlifyIdentity.logout();
+      window.location.href = "login.html";
+    };
+  </script>
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>
