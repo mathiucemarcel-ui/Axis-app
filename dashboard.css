@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+/* Topo */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 40px;
+  background: rgba(0,0,0,0.25);
+  backdrop-filter: blur(12px);
+}
+
+.topbar h1 {
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+.topbar button {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.4);
+  padding: 10px 18px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Conteúdo */
+.dashboard {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.intro h2 {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.intro p {
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+
+/* Hábitos */
+.habits {
+  background: rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding: 30px;
+  backdrop-filter: blur(20px);
+}
+
+.habits h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.habit {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 14px;
+  background: rgba(0,0,0,0.25);
+  margin-bottom: 12px;
+  transition: background 0.2s ease;
+}
+
+.habit:hover {
+  background: rgba(0,0,0,0.4);
+}
+
+.habit input {
+  width: 22px;
+  height: 22px;
+}
+
+.habit span {
+  font-size: 18px;
+}
