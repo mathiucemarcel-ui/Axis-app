@@ -11,7 +11,7 @@ body {
   color: #fff;
 }
 
-/* Topo */
+/* TOPO */
 .topbar {
   display: flex;
   justify-content: space-between;
@@ -35,7 +35,7 @@ body {
   cursor: pointer;
 }
 
-/* Conteúdo */
+/* CONTEÚDO */
 .dashboard {
   max-width: 900px;
   margin: 40px auto;
@@ -52,7 +52,7 @@ body {
   margin-bottom: 30px;
 }
 
-/* Hábitos */
+/* CARD HÁBITOS */
 .habits {
   background: rgba(255,255,255,0.08);
   border-radius: 20px;
@@ -65,6 +65,37 @@ body {
   margin-bottom: 20px;
 }
 
+/* ADICIONAR HÁBITO */
+.add-habit {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.add-habit input {
+  flex: 1;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+.add-habit button {
+  padding: 14px 22px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-habit button:hover {
+  opacity: 0.9;
+}
+
+/* HÁBITO */
 .habit {
   display: flex;
   align-items: center;
