@@ -28,21 +28,18 @@
     <section class="habits">
       <h3>Hábitos de hoje</h3>
 
-      <div class="habit">
-        <input type="checkbox">
-        <span>Treinar o corpo</span>
+      <!-- ADICIONAR HÁBITO -->
+      <div class="add-habit">
+        <input 
+          type="text" 
+          id="newHabit" 
+          placeholder="Digite um novo hábito..."
+        >
+        <button id="addHabit">Adicionar</button>
       </div>
 
-      <div class="habit">
-        <input type="checkbox">
-        <span>Estudar algo importante</span>
-      </div>
-
-      <div class="habit">
-        <input type="checkbox">
-        <span>Planejar o dia seguinte</span>
-      </div>
-
+      <!-- LISTA DE HÁBITOS -->
+      <div id="habitList"></div>
     </section>
 
   </main>
