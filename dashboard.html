@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <title>AXIS — Dashboard</title>
+  <title>AXIS 2.0 — Dashboard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Fonte -->
@@ -21,24 +21,30 @@
   <main class="dashboard">
 
     <section class="intro">
-      <h2>Seu dia começa aqui</h2>
-      <p>Poucas ações. Executadas todos os dias.</p>
+      <h2>Disciplina diária</h2>
+      <p>Progresso não é intensidade. É repetição.</p>
     </section>
 
-    <section class="habits">
-      <h3>Hábitos de hoje</h3>
+    <!-- PROGRESSO -->
+    <section class="progress-card">
+      <div class="progress-header">
+        <span>Progresso de hoje</span>
+        <span id="progressText">0%</span>
+      </div>
+      <div class="progress-bar">
+        <div id="progressFill"></div>
+      </div>
+    </section>
 
-      <!-- ADICIONAR HÁBITO -->
+    <!-- HÁBITOS -->
+    <section class="habits">
+      <h3>Hábitos</h3>
+
       <div class="add-habit">
-        <input 
-          type="text" 
-          id="newHabit" 
-          placeholder="Digite um novo hábito..."
-        >
+        <input type="text" id="newHabit" placeholder="Novo hábito..." />
         <button id="addHabit">Adicionar</button>
       </div>
 
-      <!-- LISTA DE HÁBITOS -->
       <div id="habitList"></div>
     </section>
 
